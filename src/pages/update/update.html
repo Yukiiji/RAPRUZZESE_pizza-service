@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Modifier une pizza</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+
+    <ion-item>
+      <ion-label fixed>Prix</ion-label>
+      <ion-input type="number" [(ngModel)]="pizza.price"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed>Nom</ion-label>
+      <ion-input type="text" [(ngModel)]="pizza.name"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed>Description</ion-label>
+      <ion-input type="text" [(ngModel)]="pizza.desc"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <button ion-button color="safe" (click)="updating()">Valider</button>
+
+</ion-content>
